@@ -1,0 +1,40 @@
+{
+  "total_transactions": 15,
+  "total_amount_kzt": 437000,
+  "baseline": {
+    "transactions_attempted": 2,
+    "successful_transactions": 1,
+    "transactions_lost": 14,
+    "processed_amount_kzt": 12000,
+    "lost_amount_kzt": 425000,
+    "completion_rate_percent": 6.67
+  },
+  "fault_tolerant": {
+    "successful_transactions": 13,
+    "transactions_lost": 2,
+    "processed_amount_kzt": 287000,
+    "lost_amount_kzt": 150000,
+    "retry_attempts": 11,
+    "rollbacks": 2,
+    "completion_rate_percent": 86.67,
+    "checkpoints": [
+      {
+        "checkpoint": "CP1",
+        "successful_transactions": 5,
+        "total_amount_kzt": 103000,
+        "state_saved": "T001, T002, T003, T004, T005"
+      },
+      {
+        "checkpoint": "CP2",
+        "successful_transactions": 10,
+        "total_amount_kzt": 214000,
+        "state_saved": "T001, T002, T003, T004, T005, T007, T008, T009, T010, T011"
+      }
+    ]
+  },
+  "analysis": {
+    "completion_improvement_percentage_points": 80.0,
+    "transaction_loss_reduction_percent": 85.71,
+    "lost_amount_reduction_percent": 64.71
+  }
+}

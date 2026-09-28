@@ -1,0 +1,27 @@
+Timestamp/Step,Transaction,Attempt,Failure,Action,Result
+2026-09-28T04:22:40+00:00,T001,1,None,Process and record,Success
+2026-09-28T04:22:40+00:00,T002,1,Network,Retry,Fail
+2026-09-28T04:22:40+00:00,T002,2,Network,Process and record,Success
+2026-09-28T04:22:40+00:00,T003,1,None,Process and record,Success
+2026-09-28T04:22:40+00:00,T004,1,Timeout,Retry,Fail
+2026-09-28T04:22:40+00:00,T004,2,Timeout,Retry,Fail
+2026-09-28T04:22:40+00:00,T004,3,Timeout,Process and record,Success
+2026-09-28T04:22:40+00:00,T005,1,None,Process and record,Success
+2026-09-28T04:22:40+00:00,T006,1,Database,Retry,Fail
+2026-09-28T04:22:40+00:00,T006,2,Database,Retry,Fail
+2026-09-28T04:22:40+00:00,T006,3,Database,Rollback to latest checkpoint,Rollback
+2026-09-28T04:22:40+00:00,T007,1,None,Process and record,Success
+2026-09-28T04:22:40+00:00,T008,1,Network,Retry,Fail
+2026-09-28T04:22:40+00:00,T008,2,Network,Process and record,Success
+2026-09-28T04:22:40+00:00,T009,1,None,Process and record,Success
+2026-09-28T04:22:40+00:00,T010,1,Timeout,Retry,Fail
+2026-09-28T04:22:40+00:00,T010,2,Timeout,Retry,Fail
+2026-09-28T04:22:40+00:00,T010,3,Timeout,Process and record,Success
+2026-09-28T04:22:40+00:00,T011,1,None,Process and record,Success
+2026-09-28T04:22:40+00:00,T012,1,Database,Retry,Fail
+2026-09-28T04:22:40+00:00,T012,2,Database,Retry,Fail
+2026-09-28T04:22:40+00:00,T012,3,Database,Rollback to latest checkpoint,Rollback
+2026-09-28T04:22:40+00:00,T013,1,None,Process and record,Success
+2026-09-28T04:22:40+00:00,T014,1,None,Process and record,Success
+2026-09-28T04:22:40+00:00,T015,1,Network,Retry,Fail
+2026-09-28T04:22:40+00:00,T015,2,Network,Process and record,Success
